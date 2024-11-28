@@ -1,0 +1,51 @@
+body{
+    background-color: snow;
+    color: black;
+}
+
+header{
+    background-color: snow;
+}
+
+nav{
+    color: black;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin: 1cm;
+}
+
+aside{
+    padding: 38px;
+    float: left;
+}
+
+#clear{
+    clear: both;
+}
+
+main{
+    background-color: black;
+    color: darkorange;
+    text-align: right;
+    float: right;
+    margin: 1cm;
+    margin-top: 1cm;
+    width: 10cm;
+    padding-right: 5cm;
+}
+
+footer{
+    text-align: center;
+}
+
+
