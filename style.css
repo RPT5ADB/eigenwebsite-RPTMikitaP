@@ -1,28 +1,12 @@
 body {
-    background-color: #0047AB;
-    font-size: var(--mobile-typography-size-heading-xl, 10px);
-    font-weight: var(--typography-font-weight-heading-default, 500);
+    background-color: #ADD8E6;
+    font-size: var(--mobile-typography-size-heading-xl, 15px);
+    font-weight: var(--typography-font-weight-heading-default, 700);
     letter-spacing: var(--typography-letter_spacing-heading, -1.5);
     line-height: var(--mobile-typography-line_height-heading-xl, 40px);
     text-decoration: none;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-}
-
-header{
-    background-color: snow;
-}
-
-nav{
-    color: black;
-    background-color: lightsteelblue;
-    text-align: center;
-}
-
-h1{
-    color: red;
-    text-align: center;
 }
 
 a{
@@ -32,7 +16,7 @@ a{
 }
 
 aside{
-    padding: 38px;
+    padding: 30px;
     float: left;
 }
 
@@ -41,8 +25,8 @@ aside{
 }
 
 main{
-    background-color: black;
-    color: darkorange;
+    background-color: blue;
+    color: blue;
     text-align: right;
     float: right;
     margin: 1cm;
@@ -51,9 +35,13 @@ main{
     padding-right: 5cm;
 }
 
-footer{
-    text-align: center;
+.footer { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
 }
 
-
+img{
+    width: 50px;
+}
 
