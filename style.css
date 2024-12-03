@@ -1,6 +1,13 @@
-body{
-    background-color: snow;
-    color: black;
+body {
+    background-color: #0047AB;
+    font-size: var(--mobile-typography-size-heading-xl, 10px);
+    font-weight: var(--typography-font-weight-heading-default, 500);
+    letter-spacing: var(--typography-letter_spacing-heading, -1.5);
+    line-height: var(--mobile-typography-line_height-heading-xl, 40px);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 header{
@@ -47,5 +54,6 @@ main{
 footer{
     text-align: center;
 }
+
 
 
