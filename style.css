@@ -7,6 +7,7 @@ body {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    height: 20cm;
 }
 
 a{
@@ -18,6 +19,7 @@ a{
 aside{
     padding: 30px;
     float: left;
+    width: 100px;
 }
 
 #clear{
@@ -36,12 +38,15 @@ main{
 }
 
 .footer { 
+    text-align: end;
     position: absolute; 
-    bottom: 0; 
-    left: 0; 
+    bottom: 0;  
 }
 
 img{
-    width: 50px;
+    width: 100px;
 }
 
+p{
+    color: red;
+}
