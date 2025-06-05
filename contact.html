@@ -1,0 +1,47 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact">
+    <header>
+        <h1 class="kleurveranderen">Game Korting</h1>
+    </header>
+    <nav>
+        <a href="hoofdpagina.html">Home</a>
+        <a href="popular.html">Popular</a>
+        <a href="discounts.html">Discounts</a>
+        <a href="contact.html">Contact With Us</a>
+    </nav>
+    <h1>Contact Page</h1>
+    <form action="mailto:nikita.pryvalov@leerling.molenland.be" method="post" enctype="text/plain">
+        <label for="naam">Naam op website:</label>
+        <input type="text" id="naam" name="naam" placeholder="Vul je naam in" required>
+
+        <label for="wachtwoord">Wachtwoord op website:</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" placeholder="Voer je wachtwoord in">
+
+        <label for="emailadres">Emailadres:</label>
+        <input type="email" id="emailadres" name="emailadres" required placeholder="Voer je email in">
+
+        <label for="telefoonnummer">Telefoonnummer:</label>
+        <input type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="Voer je telefoonnummer in">
+
+        <label for="reden">Kies een reden:</label>
+        <select name="reden" id="reden">
+            <option value="PAankoop">Probleem met aankoop</option>
+            <option value="PWebsite">Probleem met website</option>
+            <option value="PAndere">Andere</option>
+        </select>
+
+        <label for="bericht">Opmerkingen:</label>
+        <textarea rows="5" name="bericht" id="bericht" placeholder="Beschrijf probleem met details"></textarea>
+
+        <input type="submit" value="*Click here*">
+    </form>
+</body>
+</html>
