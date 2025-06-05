@@ -1,0 +1,301 @@
+/* Algemene stijlen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+body.homepage {
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    padding: 20px;
+    float: left;
+    width: 220px;
+}
+
+aside h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    margin: 20px auto;
+    background-color: #fdf5d4;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightblue;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tfoot {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+footer {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer img {
+    padding: 20px;
+    width: 100px;
+    margin: 5px;
+}
+
+body.contact {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+body.contact h1 {
+    color: white;
+}
+
+body.contact form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+body.contact label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+body.contact input,
+body.contact select,
+body.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body.contact input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+body.contact input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+body.discounts {
+    background-color: lightblue;
+}
+
+.bestedeals {
+    text-align: center;
+    color: white;
+}
+
+.disc75, .biba, .buba, .bibo, .bimbo {
+    text-align: left;
+    margin-left: 50px;
+    color: red;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.images-container div {
+    margin: 10px;
+    text-align: center;
+}
+
+.images-container img {
+    border-radius: 8px;
+    height: 300px;
+    width: auto;
+}
+
+.bimbi {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+
+body.popular {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+body.popular header {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+body.popular table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+body.popular th,
+body.popular td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+body.popular th {
+    background-color: lightblue;
+    color: white;
+}
+
+body.popular tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+body.popular tr:hover {
+    background-color: #ddd;
+}
+
+body.popular tfoot {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* RESPONSIVE STIJLEN - voor schermen kleiner dan 768px */
+@media (max-width: 767px) {
+    
+    /* Navigatie wordt gestapeld */
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Afbeeldingen worden onder elkaar geplaatst */
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-container div {
+        width: 90%;
+    }
+
+    .images-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Formulier op contactpagina wordt breder (bijna volledige breedte) */
+    body.contact form {
+        width: 90%;
+    }
+
+    /* Tabel wordt smaller en tekst kleiner */
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    /* Footer afbeeldingen worden kleiner */
+    footer img {
+        width: 60px;
+    }
+
+    /* Foto's die normaal zweven (float) worden volledig breed en zonder float */
+    .foto, .foto1 {
+        float: none;
+        width: 100%;
+    }
+}
